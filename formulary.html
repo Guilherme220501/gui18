@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="theme-color" content="#f4323">
+    <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulario</title>
+</head>
+<style>
+body{text-align: center;justify-content: center;margin: auto;align-items: center;background:linear-gradient(to right,white,red,white);}
+h1{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;font-size: 30px;color: white;text-shadow: 6px;text-decoration: underline;}
+h2{font-size: 20px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: italic;text-shadow: 6px;color: red;}
+p{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-style: inherit;font-size: 15px;text-shadow: 6px;color: white;}
+summary{width: 100px;margin: auto;border-radius: 10px 10px;text-shadow: 6px;padding: 5px;}
+form{align-items: center;justify-content: center;text-align: center;margin: auto;display: flex;flex-direction: column;}
+fieldset{padding: 10px;margin: auto;width: 300px;background-color: bisque;border: 3px solid white;box-shadow: 8px 8px 8px red;}
+label{font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;text-shadow: 6px;padding: 5px;display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;}
+input{width: 300px;border-radius: 10px 10px;margin: auto;text-align: left;padding: 3px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 15px;font-style: inherit;text-shadow: 6px;color: black;background-color: beige;border: 2px solid blue;}
+.color1{display: flex;flex-direction: row;padding: 5px;align-items: center;justify-content: center;margin: auto;width: 300px;background-color: blue;box-shadow: 8px 8px 8px white;}
+.color2{display: flex;flex-direction: row;padding: 5px;align-items: center;justify-content: center;margin: auto;width: 300px;background-color: black;box-shadow: 8px 8px 8px yellow;}
+.color3{display: flex;flex-direction: row;padding: 5px;align-items: center;justify-content: center;margin: auto;width: 300px;background-color: blueviolet;box-shadow: 8px 8px 8px white;}
+.color4{display: flex;flex-direction: row;padding: 5px;align-items: center;justify-content: center;margin: auto;width: 300px;background-color: bisque;box-shadow: 8px 8px 8px red;}
+select{width: 200px;margin: auto;border-radius: 10px 10px;text-shadow: 6px;background-color: black;border: 5px solid white;color: yellow;box-shadow: 8px 8px 8px yellow;padding: 5px;}
+textarea{height: 200px;width: 300px;margin: auto;border-radius: 10px 10px;background-color: bisque;color: black;border: 3px solid red;box-shadow: 8px 8px 8px white;padding: 5px;text-shadow: 6px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 15px;font-style: italic;}
+button{width: 300px;margin: auto;border-radius: 10px 10px;background-color: blue;color: white;font-size: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: oblique;text-shadow: 6px;border: 3px solid white;box-shadow: 8px 8px 8px blue;}
+#clock{width: 230px;margin: auto;border-radius: 10px 10px;text-shadow: 6px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: inherit;font-size: 20px;padding: 10px;background-color: blue;color: white;border: 6px solid white;box-shadow: 8px 8px 8px blue;}
+</style>
+<body>
+    <div id="text"><details><summary style="background-color: black;color:white;border: 3px solid white;box-shadow: 8px 8px 8px yellow;">Formulário</summary>
+    <br>
+    <form>
+    <header><h1><big>Cadastro de <b style="color: red;">BRS</b></big></h1></header>
+    <br>
+    <fieldset>
+    <main>
+    <div id="clock"><input type="time" name="Cadastro" id="Cadastro"></div>
+    <br>
+    <label for="NOME">NOME</label>
+    <input type="text" name="NOME" id="NOME" required>
+    <label for="IDADE">IDADE</label>
+    <input type="number" name="IDADE" id="IDADE" required>
+    <label for="Endereço">Endereço</label>
+    <input type="text" name="Endereço" id="Endereço" required>
+    <label for="CNH">CNH</label>
+    <input type="text" name="CNH" id="CNH" required>
+    <label for="CPF">CPF</label>
+    <input type="number" name="CPF" id="CPF" required>
+    <label for="RG">RG</label>
+    <input type="number" name="RG" id="RG" required>
+    <label for="Email">Email</label>
+    <input type="email" name="Email" id="Email" required>
+    <label for="Telefone">Telefone</label>
+    <input type="tel" name="Telefone" id="Telefone" placeholder="Telefone" required>
+    <label for="Data e hora">Data e hora</label>
+    <input type="datetime" id="Data e hora" name="Data e hora" required>
+    <label for="Data hora e local">Data hora e local</label>
+    <input type="datetime-local" name="Data hora e local" id="Data hora e local" required>
+    <br>
+    <br>
+    <h2><big>Qual o seu <b style="color: red;">Estado cívil</b>?</big></h2>
+    <br>
+    <div id="text"><details><summary style="background-color: aqua;color: black;border: 3px solid white;box-shadow: 8px 8px 8px aqua;">Qual?</summary>
+    <br>
+    <div class="color1">
+    <label for="Casado">Casado</label>
+    <input type="checkbox" name="Estado" value="Casado">
+    <label for="Separado">Separado</label>
+    <input type="checkbox" name="Estado" value="Separado">
+    <label for="Divorciado">Divorciado</label>
+    <input type="checkbox" name="Estado" value="Divorciado">
+    <label for="Viúvo">Viúvo</label>
+    <input type="checkbox" name="Viúvo" id="Viúvo">
+    </div></details>
+    <br>
+    <br>
+    <h2><big>Qual o seu nível de experiência?</big></h2>
+    <br>
+    <div id="text"><details><summary style="background-color: black;color: white;border: 6px solid white;box-shadow: 8px 8px 8px yellow;">Qual?</summary>
+    <br>
+    <div class="color2">
+    <label for="Novato">Novato</label>
+    <input type="checkbox" value="Novato" name="experiência?">
+    <label for="Aprendiz">Aprendiz</label>
+    <input type="checkbox" value="Aprendiz" name="experiência?">
+    <label for="Intermediário">Intermediário</label>
+    <input type="checkbox" value="Intermediário" name="experiência?">
+    <label for="Experiente">Experiente</label>
+    <input type="checkbox" value="Experiente" name="experiência?">
+    </div></details>
+    <br>
+    <h2><big>Qual seu nível de conhecimento</big></h2>
+    <br>
+    <div id="text"><details><summary style="background-color: blue;color: white;border: 6px solid white;box-shadow: 8px 8px 8px blue;">Qual?</summary>
+    <br>
+    <div class="color3">
+    <label for="Base">Base</label>
+    <input type="radio" value="Base" name="conhecimento" required>
+    <label for="Iniciante">Iniciante</label>
+    <input type="radio" value="Iniciante" name="conhecimento" required>
+    <label for="Razoável">Razoável</label>
+    <input type="radio" value="Razoável" name="conhecimento" required>
+    <label for="Complexo">Complexo</label>
+    <input type="radio" value="Complexo" name="conhecimento" required>
+    </div></details>
+    <br>
+    <h2><big>Qual a sua <b>Classe social</b>?</big></h2>
+    <br>
+    <div id="text"><details><summary style="background-color: brown;color: white;border: 6px solid white;box-shadow: 8px 8px 8px brown;">Qual?</summary>
+    <br>
+    <div class="color4">
+    <label for="Classe A">Classe A</label>
+    <input type="radio" value="Classe A" name="Classe" required>
+    <label for="Classe B">Classe B</label>
+    <input type="radio" value="Classe B" name="Classe" required>
+    <label for="Classe C">Classe C</label>
+    <input type="radio" value="Classe C" name="Classe" required>
+    <label for="Classe D">Classe D</label>
+    <input type="radio" value="Classe D" name="Classe" required>
+    </div>
+    </details>
+    <br>
+    <h2><big>Qual o seu <b>Signo</b>?</big></h2>
+    <br>
+    <div id="text"><details><summary style="background-color: blueviolet;color: white;border: 5px solid white;box-shadow: 8px 8px 8px blueviolet;">Qual?</summary>
+    <br>
+    <select name="Signo" id="Signo" required><option value="" selected disabled>Selecione</option>
+    <option value="Ofiúco">Ofiúco</option>
+    <option value="Gemêos">Gemêos</option>
+    <option value="Libra">Libra</option>
+    <option value="Leão">Leão</option>
+    <option value="Capricornio">Capricornio</option>
+    <option value="Sagitário">Sagitário</option>
+    <option value="Virgem">Virgem</option>
+    <option value="Aquario">Aquario</option>
+    <option value="Peixes">Peixes</option>
+    <option value="Escorpião">Escorpião</option>
+    <option value="Câncer">Câncer</option>
+    <option value="Áries">Áries</option>
+    <option value="Touro">Touro</option>
+    </select>
+    </details></div>
+    <h2><big>Me fale sobre sua <b>Experiência</b>?</big></h2>
+    <br>
+    <textarea name="Experiência" id="Experiência" rows="6" required></textarea>
+    <br>
+    <br>
+    <button value="Experiência">Confirme</button>
+    </main>
+    </fieldset>
+    <br>
+    <footer style="width: 300px;margin: auto;border-radius: 10px 10px;background-color: darkblue;text-align: center;padding: 10px;box-shadow: 8px 8px 8px white;">
+    <nav>
+    <p>Retorne para minha <a href="index.html" target="_blank" rel="external" style="background-color: blue;color: white;border: 3px solid white;text-shadow: 6px;">1ªPágina</a></p>
+    </nav>
+    </footer>
+    </form>
+    </details></div>
+    <script src="script.js"></script>
+    <script>showAlert("Welcome my formulary")</script>
+</body>
+</html>
