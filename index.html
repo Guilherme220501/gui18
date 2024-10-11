@@ -25,26 +25,40 @@ list-style-type: none;text-decoration: none;padding: 5px;}
 .summary:hover{transform: scale(1.05);transition: transform (1.5s);}
 .section:hover{transform: scale(1.05);transition: transform(1.5s);}
 .cursos{width: 300px;margin: auto;border-radius: 10px 10px;padding: 10px;text-align: center;justify-content: center;align-items: center;background-color: blue;border: 3px solid cornsilk;border-radius: 10px 10px;}
-.item:hover{transform: scale(1.05);transition: transform(1.5s);}
+.item:hover{transform: scale(1.06);transition: transform(0.9s);}
 </style>
 <body>
+    <div class="menu" onclick="toggleMenu()">
+        ☰ Menu
+</div>
     <header style="color: white;"><h1>Sobre <b style="color: rgb(0, 0, 0);">MIM</b></h1></header>
     <hr>
     <br>
-    <div class="li">
-    <nav>
+<div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleMenu()">×</button>
+    <br>
+    <br>
+<div class="side-bar">
     <ul style="list-style-type: none;">
         <li><a href="#sobre">Sobre MIM</a></li>
-        <li><a href="#cronograma">cronograma</a></li>
+        <br>
+        <li><a href="#cronograma">Cronograma</a></li>
+        <br>
         <li><a href="#cursos">Cursos</a></li>
+        <br>
         <li><a href="#materias">Materias</a></li>
-        <li><a href="#complementares">complementares</a></li>
+        <br>
+        <li><a href="#complementares">Complementares</a></li>
+        <br>
         <li><a href="#certificados">Certificados</a></li>
+        <br>
         <li><a href="#contatos">Contatos</a></li>
+        <br>
         <li><a href="#redes">Redes</a></li>
+        <br>
     </ul>
     </nav>
-    </div>
+    </div></div>
     <br>
     <main>
         <div class="item">

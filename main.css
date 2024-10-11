@@ -3,7 +3,59 @@ linear-gradient(to right,black,orange,black);}
 h1{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;font-size: 30px;text-shadow: 6px;text-decoration: underline;color: white;}
 h2{color: red;text-shadow: 6px;font-size: 20px;font-style: italic;font-family: 'Times New Roman', Times, serif;}
 p{font-size: 15px;font-family: 'Times New Roman', Times, serif;font-style: initial;text-shadow: 6px;color: white;}
-a{font-size: 10px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: initial;text-shadow: 6px;text-decoration: none;padding: 5px;border-radius: 10px 10px;}
+a{font-size: 15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: initial;text-shadow: 6px;text-decoration: none;padding: 10px;border-radius: 10px 10px;}
+.menu {
+    font-size: 20px;
+font-style:oblique;
+    cursor: pointer;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    left: 10px;
+    z-index: 2000;
+border-radius: 10px 10px;
+list-style: none;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px 10px;
+}
+/* Menu Lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Fora da tela inicialmente */
+    width: 160px;
+    height: 100vh;
+    background-color:white;
+    transition: left 0.5s; /* Transição suave ao abrir/fechar */
+    z-index: 1000;
+    border-radius: 10px 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.close-btn {float: right;
+    position: relative;right: 10px;top: 10px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+.side-bar ul li a:hover {
+    background-color: blueviolet;
+    width: 130px;
+    border-radius: 10px 10px;
+    box-shadow: 5px 5px 5px red;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+    border-radius: 10px 10px;
+    margin-bottom: 10px;
+}
 section{width: 300px;border-radius: 10px 10px;margin: auto;text-align: center;justify-content:center;padding: 10px;}
 header{width: 300px;margin: auto;text-align: center;padding: 10px;justify-content: center;}
 footer{width: 100px;margin: auto;text-align: center;padding: 10px;justify-content: center;border-radius: 10px 10px;}
