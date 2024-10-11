@@ -26,7 +26,7 @@ list-style: none;
     top: 0;
     left: -250px; /* Fora da tela inicialmente */
     width: 160px;
-    height: 100vh;
+    height: 500vh;
     background-color:white;
     transition: left 0.5s; /* Transição suave ao abrir/fechar */
     z-index: 1000;
@@ -58,7 +58,7 @@ list-style: none;
 }
 section{width: 300px;border-radius: 10px 10px;margin: auto;text-align: center;justify-content:center;padding: 10px;}
 header{width: 300px;margin: auto;text-align: center;padding: 10px;justify-content: center;}
-footer{width: 500px;margin: auto;text-align: center;padding: 10px;justify-content: center;border-radius: 10px 10px;}
+footer{width: 300px;margin: auto;text-align: center;padding: 10px;justify-content: center;border-radius: 10px 10px;}
 dl{padding: 5px;}
 dt{text-align: left;font-size: 20px;font-style: oblique;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-shadow: 6px;padding: 5px;}
 dd{font-size: 15px;font-family: Arial, Helvetica, sans-serif;font-style: inherit;text-align: left;text-shadow: 6px;padding: 5px;}
