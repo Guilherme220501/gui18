@@ -26,7 +26,7 @@ list-style: none;
     top: 0;
     left: -250px; /* Fora da tela inicialmente */
     width: 160px;
-    height: 100vh;
+    height: 500vh;
     background-color:white;
     transition: left 0.5s; /* Transição suave ao abrir/fechar */
     z-index: 1000;
